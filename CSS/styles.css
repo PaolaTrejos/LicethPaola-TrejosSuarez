@@ -1,0 +1,378 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 40px;
+    color: rgb(36, 46, 82);
+}
+
+p {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+nav p {
+    transition: transform .2s;
+}
+
+nav p:hover {
+    cursor: pointer;
+    color: rgb(40, 36, 82, 0.6);
+    transform: scale(1.5);
+}
+
+.boton-contacto {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: rgb(139, 72, 191);
+    border: 1px solid rgb(139, 72, 191);
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+    width: 90px;
+}
+
+.boton-contacto:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 5px 0 rgba(34, 34, 34, 0.3);
+}
+
+.contenido-inicial {
+    padding: 30px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.publicidad {
+    display: flex;
+    column-gap: 60px;
+    width: 80%;
+    position: relative;
+}
+
+.imagen-publicidad {
+    width: 50%;
+
+    .img {
+        width: 98%;
+        position: relative;
+    }
+}
+
+.texto-publicidad {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    text-align: end;
+    align-items: end;
+    width: 50%;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: rgb(35, 44, 80);
+    font-size: 40px;
+    max-width: 380px;
+    text-align: end;
+    margin: 0;
+}
+
+.texto-publicidad p {
+    color: rgb(0, 0, 0);
+    max-width: 430px;
+    margin: 0;
+    font-size: 17px;
+}
+
+.barra {
+    background-color: #8b48bf;
+    display: flex;
+    height: 180px;
+    align-items: center;
+    column-gap: 130px;
+    position: relative;
+}
+
+.titulo-barra {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.titulo-barra h2 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin: 0;
+    width: 400px;
+}
+
+.texto-barra {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    position: relative;
+}
+
+.texto-barra p {
+    color: white;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 200;
+    width: 400px;
+}
+
+.servicios {
+    background-color: #fafafa;
+    margin: 0;
+    padding: 20px;
+}
+
+.servicios p {
+    margin: 0;
+}
+
+.contenido-servicios {
+    display: flex;
+    gap: 15px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.numeros {
+    width: 45px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #8b48bf;
+    text-align: center;
+}
+
+.numeros p {
+    color: white;
+    font-size: 12px;
+    padding-top: 0.6em;
+}
+
+.servicios-iniciales {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 40px;
+}
+
+.info-servicios {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    max-width: 440px;
+}
+
+.titulo-servicios {
+    padding-top: 9px;
+    font-size: 15;
+    font-weight: 600;
+}
+
+.texto-servicios {
+    font-size: 15;
+    color: rgb(179, 178, 183);
+}
+
+.los-mejores {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #242E53;
+    text-align: center;
+    font-size: 40px;
+    padding: 100px;
+}
+
+.mejores-jugadores {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fafafa;
+    text-align: center;
+    margin: 0 30px;
+}
+
+.contenedor-jugadores {
+    padding: 5px 15px;
+    height: 250px;
+}
+
+.img-jugador {
+    border-radius: 50px;
+    position: relative;
+    top: -2.5em;
+    z-index: 1;
+}
+
+.nombre-jugador {
+    color: #3F4868;
+    font-weight: 600;
+}
+
+.descripcion-jugador {
+    color: #B9B9C1;
+    max-width: 430px;
+}
+
+.contendor-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-more {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: rgb(139, 72, 191);
+    border: 1px solid rgb(139, 72, 191);
+    border-radius: 30px;
+    padding: 15px;
+    margin: 80px;
+    color: white;
+    font-size: 14px;
+    width: 120px;
+}
+
+.boton-more:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.barra-final {
+    background-color: #8b48bf;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.boton-go {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    box-shadow: 0 5px 5px 0 rgba(34, 34, 34, 0.3);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 15px;
+    margin: 40px;
+    color: rgb(139, 72, 191);
+    font-size: 14px;
+    width: 140px;
+}
+
+.boton-go:hover {
+    cursor: pointer;
+    box-shadow: -1px 0 15px 10px rgba(255, 255, 255, 0.39);
+}
+
+.barra-final {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 190px;
+
+}
+
+.mejores-equipos {
+    font-size: 30px;
+    font-weight: 600;
+    max-width: 400px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1e1e26;
+    color: white;
+    height: 270px;
+}
+
+.redes {
+    padding: 30px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes-sociales {
+    display: flex;
+    column-gap: 15px;
+}
+
+.facebook, .youtube, .twitter, .pinterest, .instagram {
+    transition: transform .2s;
+}
+
+.facebook:hover, .youtube:hover, .twitter:hover, .pinterest:hover, .instagram:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px 20px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    align-items: start;
+    width: 33%;
+}
+
+.campo-texto {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 33%;
+}
+
+.input {
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-evenly;
+}
+
+.input input {
+    width: 170px;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid #1e1e26;
+    padding: 2px 10px 2px 10px;
+}
+
+::placeholder {
+    color: #A0A0A0;
+    font-weight: 500;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 14px;
+}
+
+.input button {
+    background-color: #8b48bf;
+    color: white;
+    border: 1px solid #8b48bf;
+    border-radius: 25px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 14px;
+    width: 70px;
+    height: 45px;
+    padding: 5px;
+}
+
+.copy {
+    color: #A0A0A0;
+    font-size: 12px;
+    text-align: end;
+}
