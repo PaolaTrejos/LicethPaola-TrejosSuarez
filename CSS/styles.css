@@ -12,6 +12,10 @@ nav {
     color: rgb(36, 46, 82);
 }
 
+.menu-desplegable {
+    visibility: hidden;
+}
+
 p {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
@@ -26,7 +30,7 @@ nav p:hover {
     transform: scale(1.5);
 }
 
-.boton-contacto {
+.boton-contacto-navbar {
     font-family: 'Be Vietnam Pro', sans-serif;
     background-color: rgb(139, 72, 191);
     border: 1px solid rgb(139, 72, 191);
@@ -37,7 +41,7 @@ nav p:hover {
     width: 90px;
 }
 
-.boton-contacto:hover {
+.boton-contacto-navbar:hover {
     cursor: pointer;
     box-shadow: 0 5px 5px 0 rgba(34, 34, 34, 0.3);
 }
@@ -91,6 +95,22 @@ h1 {
     max-width: 430px;
     margin: 0;
     font-size: 17px;
+}
+
+.boton-contacto {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: rgb(139, 72, 191);
+    border: 1px solid rgb(139, 72, 191);
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+    width: 90px;
+}
+
+.boton-contacto:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 5px 0 rgba(34, 34, 34, 0.3);
 }
 
 .barra {
@@ -204,7 +224,7 @@ h1 {
     margin: 0 30px;
 }
 
-.contenedor-jugadores {
+.contenedor-jugador1, .contenedor-jugador2, .contenedor-jugador3 {
     padding: 5px 15px;
     height: 250px;
 }
@@ -375,4 +395,254 @@ footer {
     color: #A0A0A0;
     font-size: 12px;
     text-align: end;
+}
+
+.copy2 {
+    visibility: hidden;
+}
+
+@media (max-width:390px) {
+
+    body {
+        width: 100%;
+    }
+
+    header {
+        justify-content: space-between;
+        column-gap: 80px;
+    }
+
+    .boton-contacto-navbar {
+        display: none;
+    }
+
+    .menu-desplegable {
+        visibility: visible; 
+        padding-left: 5em;
+        width: 40px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .publicidad {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .contenido-inicial {
+        margin-top: 0;
+    }
+
+    .imagen-publicidad {
+        width: 100%;
+    }
+
+    .texto-publicidad {
+        width: 100%;
+    }
+
+    .texto-publicidad p {
+        font-size: 13.5px;
+        font-weight: 500;
+    }
+
+    .boton-contacto {
+        width: 115px;
+        font-weight: 200;
+        font-size: 11px;
+    }
+
+    .barra {
+        background-color: #3cddf3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 260px;
+        align-items: start;
+        padding: 20px;
+    }
+
+    .titulo-barra {
+        width: 100%;
+    }
+
+    .titulo-barra h2 {
+        margin-top: 0.83em;
+        font-weight: 500;
+    }
+
+    .texto-barra {
+        width: 100%;
+    }
+
+    .texto-barra p {
+        font-size: 13px;
+    }
+
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .texto-servicios {
+        font-size: 13px;
+        width: 300px;
+    }
+
+    .servicios-iniciales {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo-servicios {
+        background-color: rgba(139, 72, 191, 0.384);
+        text-align: start;
+        padding: 10px 10px;
+        width: 100%;
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0;
+    }
+    
+    .contenido-servicios {
+        gap: 0;
+    }
+
+    .numeros {
+        width: 310px;
+        height: 36px;
+        z-index: 1;
+        background-color: rgba(139, 72, 191, 0.384);
+        border-radius: 1px;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+
+    .numeros p {
+        padding-top: 0.8em;
+        padding-bottom: 1em;
+        background-color: #8b48bf;
+        border-radius: 25px;
+    }
+
+    .los-mejores {
+        font-size: 30px;
+        padding: 100px 0;
+    }
+
+    .contenedor-jugador1, .contenedor-jugador3 {
+        display: none;
+    }
+
+    .contenedor-jugador2 {
+        height: 186px;
+        padding-bottom: 30px;
+    }
+
+    .img-jugador {
+        width: 60px;
+    }
+
+    .nombre-jugador {
+        font-size: 14px;
+    }
+
+    .descripcion-jugador {
+        font-size: 13px
+    }
+
+    .boton-more {
+        height: 35px;
+        width: 100px;
+        padding: 0;
+        font-size: 11px;
+        font-weight: 300;
+    }
+
+    .boton-more:hover {
+        opacity: 10;
+    }
+
+    .barra-final {
+        background-color: #3cddf3;
+        flex-direction: column;
+        text-align: center;
+        height: 300px;
+    }
+
+    .mejores-equipos {
+        font-weight: 500;
+        font-size: 35px;
+        margin: 0 55px 0 55px;
+    }
+
+    .boton-go {
+        background-color: #232c50;
+        border: none;
+        color: #fafafa;
+        font-size: 10px;
+        margin: 0;
+        width: 120px;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        height: 450px;
+        padding-top: 25px;
+    }
+
+    .menu {
+        padding-top: 20px;
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .copy {
+        display: none;
+    }
+
+    .campo-texto {
+        width: 80%;
+        padding: 10px 35px;
+    }
+
+    .input input {
+        width: 300px;
+        height: 35px;
+    }
+
+    ::placeholder {
+        font-weight: 400;
+        font-size: 11px;
+    }
+
+    .input button {
+        width: 75px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .redes {
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 90%;
+        gap: 50px;
+        padding: 5px 20px 20px 20px;
+    }
+
+    .redes-sociales {
+        column-gap: 50px;
+    }
+
+    .copy2 {
+        visibility: visible;
+        font-size: 11px;
+        text-align: center;
+        color: #8c8c94;
+        padding: 5px 15px 35px 15px;
+        margin: 0;
+    }
 }
